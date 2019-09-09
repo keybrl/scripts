@@ -7,10 +7,10 @@ if [ "$reply" != "Y" ]; then
 	exit 0
 fi
 
-echo '依赖软件包： zsh, curl, git'
+echo '依赖软件包： zsh, curl, git, powerline'
 echo '安装以上软件需要以 root 用户身份进行！'
 echo '请输入 root 用户密码以授权访问...'
-su root -c 'apt-get update && apt-get install -y zsh curl git'
+su root -c 'apt-get update && apt-get install -y zsh curl git powerline'
 if [ $? -ne 0  ]; then
 	echo '操作异常终止..'
 	exit 1
