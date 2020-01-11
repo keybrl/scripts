@@ -21,7 +21,7 @@ echo '安装 oh-my-zsh ...'
 unset ZSH
 export RUNZSH=no
 rm -rf $HOME/.oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 if [ ! -d "$HOME/.oh-my-zsh"  ]; then
 	echo '安装失败...'
         exit 1
@@ -49,7 +49,7 @@ export ZSH=\"$HOME/.oh-my-zsh\"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo \$RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME=\"amuse\"
+ZSH_THEME=\"avit\"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
